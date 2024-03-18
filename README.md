@@ -1,12 +1,12 @@
-# GreenWave
+# PlanIt
 
 ## Created By
 - Sebastian Fok
 - Anders Cederberg
 
 ## Description
-- Creating a website that informs users about a healthy diet and where their food is sourced.
-- Considers sustainability and affordability while keeping the recipes simple.
+- Creating a website that informs users about the environment and how we can take care of the planet
+- Considers sustainability and affordability while keeping the overall layout simple.
 
 ## Packages installed
-- (installing three.js and that stuff)
+- Installing three.js, using spline for our WOW factor
