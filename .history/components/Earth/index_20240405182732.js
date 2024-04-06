@@ -19,7 +19,7 @@ export default function Earth() {
     // Create a renderer with a black background
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x222222); // Black background
+    renderer.setClearColor(0x000000); // Black background
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting

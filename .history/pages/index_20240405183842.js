@@ -9,7 +9,7 @@ import HeadArea from "@/components/HeadArea";
 export default function Home() {
   return (
     <>
-      <HeadArea title="Welcome to Planit!" description="We are an environment app raising awareness on earths most pressing issues"/>
+      <HeadArea title="Welcome to Planit!"/>
       <main className={`${styles.main} `}>
         <Earth/>
       </main>

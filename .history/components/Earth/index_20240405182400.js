@@ -12,14 +12,14 @@ export default function Earth() {
     const scene = new THREE.Scene();
 
     // Create a new camera with a higher view distance
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 200); //second value is vp distance
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
     camera.position.set(-25, 15, 20);
-    camera.lookAt(0, 0, 0);
+    camera.lookAt(0, -3, 0);
 
     // Create a renderer with a black background
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x222222); // Black background
+    renderer.setClearColor(0x000000); // Black background
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting
