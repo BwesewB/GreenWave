@@ -22,7 +22,10 @@ export default function Earth() {
     renderer.setSize(430, 932);
     renderer.setClearColor(0x222222); // Greyish background
     
-
+    const emptyCanvas = containerRef.current.querySelector('.empty-canvas');
+    if (emptyCanvas) {
+        emptyCanvas.remove();
+    }
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting

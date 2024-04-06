@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <HeadArea title="Welcome to Planit!" description="We are an environment app raising awareness on earths most pressing issues"/>
       <main className={`${styles.main}`}>
-        <div className={styles.logoPlanit}>PlanIt</div>
+        <div className={styles.test}>heollloo</div>
         {/* <ButtonColoured/> */}
-        <Earth/>
+        <Earth  className={styles.absolute}/>
       </main>
     </>
   );

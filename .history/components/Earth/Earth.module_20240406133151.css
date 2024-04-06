@@ -1,0 +1,6 @@
+.earthPosition{
+    width: 100%;
+    height: ;
+    position: fixed;
+    z-index: -1;
+}

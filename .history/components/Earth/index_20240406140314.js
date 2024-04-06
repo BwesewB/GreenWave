@@ -6,7 +6,6 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export default function Earth() {
   const containerRef = useRef();
-  const earthRef = useRef();
 
   useEffect(() => {
     // Create a new scene
@@ -21,8 +20,6 @@ export default function Earth() {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(430, 932);
     renderer.setClearColor(0x222222); // Greyish background
-    
-
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting

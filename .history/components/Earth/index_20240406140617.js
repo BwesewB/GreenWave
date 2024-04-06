@@ -22,9 +22,8 @@ export default function Earth() {
     renderer.setSize(430, 932);
     renderer.setClearColor(0x222222); // Greyish background
     
-
     containerRef.current.appendChild(renderer.domElement);
-
+    
     // Create lighting
     const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
     directionalLight.position.set(300, 750, 400);

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import styles from '@/components/Earth/Earth.module.css'
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -21,8 +20,6 @@ export default function Earth() {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(430, 932);
     renderer.setClearColor(0x222222); // Greyish background
-    
-
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting
@@ -123,9 +120,10 @@ export default function Earth() {
     };
   }, []);
 
-  return (
-    <div className={styles.earthPosition}>
-      <div ref={containerRef}/>
+  return  (
+    <div style={{ width: '100%', height: '100vh', position: 'absolute', zIndex: -1 }}>
+      <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
     </div>
   );
+
 }

@@ -5,7 +5,9 @@
   overflow: hidden;
 }
 
-.logoPlanit{
-  font-family: var(--poppins);
-  color: var(--white);
+.test{
+
+}
+.absolute{
+  position:absolute;
 }

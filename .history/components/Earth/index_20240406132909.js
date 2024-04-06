@@ -21,8 +21,6 @@ export default function Earth() {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(430, 932);
     renderer.setClearColor(0x222222); // Greyish background
-    
-
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting
@@ -125,7 +123,8 @@ export default function Earth() {
 
   return (
     <div className={styles.earthPosition}>
-      <div ref={containerRef}/>
+      <div ref={containerRef} className={styles.earthPosition}/>
     </div>
   );
+
 }

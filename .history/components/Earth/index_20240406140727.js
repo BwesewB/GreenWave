@@ -22,7 +22,7 @@ export default function Earth() {
     renderer.setSize(430, 932);
     renderer.setClearColor(0x222222); // Greyish background
     
-
+    containerRef.current.innerHTML = '1';
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting

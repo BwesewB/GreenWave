@@ -22,7 +22,10 @@ export default function Earth() {
     renderer.setSize(430, 932);
     renderer.setClearColor(0x222222); // Greyish background
     
-
+    const containerParent = containerRef.current.parentNode;
+    if (containerParent.lastChild === containerRef.current) {
+        containerParent.removeChild(containerRef.current);
+    }
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting
