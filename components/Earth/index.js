@@ -12,8 +12,9 @@ export default function Earth() {
     const scene = new THREE.Scene();
 
     // Create a new camera with a higher view distance
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
-    camera.position.set(0, 0, 2000); // Set camera position to be farther from the earth
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(-20, 20, 15); // Set camera position to focus on the planet
+    camera.lookAt(0, 0, 0);
 
     // Create a renderer with a black background
     const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -22,18 +23,21 @@ export default function Earth() {
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight.position.set(500, 500, 500);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+    directionalLight.position.set(300, 750, 400);
     scene.add(directionalLight);
 
     // Load the earth model
     const loader = new GLTFLoader();
     loader.load(
-      '/EarthTwoTryGLB2.glb',
+      '/planet-earth-nocloud.glb',
       function (gltf) {
-        const earth = gltf.scene;
-        earthRef.current = earth;
-        scene.add(earth);
+        // Check if the Earth model already exists
+        if (!earthRef.current) {
+          const earth = gltf.scene;
+          earthRef.current = earth;
+          scene.add(earth);
+        }
       },
       function (xhr) {
         console.log((xhr.loaded / xhr.total * 100) + '% loaded');
@@ -94,7 +98,7 @@ export default function Earth() {
       // Rotate the earth slowly from left to right
       scene.traverse(function (child) {
         if (child.isMesh) {
-          child.rotation.y += 0.001;
+          child.rotation.y += 0.0005;
         }
       });
 
@@ -105,9 +109,9 @@ export default function Earth() {
 
     // Adjust camera aspect ratio and renderer size on window resize
     window.addEventListener("resize", function () {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.aspect = 430 / 932;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(430, 932);
     });
 
     // Cleanup
