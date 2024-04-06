@@ -120,10 +120,14 @@ export default function Earth() {
     };
   }, []);
 
-  return  (
-    <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
-      <div ref={containerRef} style={{ width: '100%', height: '100%', position: 'absolute'}} />
-    </div>
-  );
+  return  <div style={{
+
+  }}>
+            <div ref={containerRef} style={{ 
+            width: '100%', 
+            height: '100vh',
+            position: 'absolute'
+            }}/>
+          </div>;
 
 }

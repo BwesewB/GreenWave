@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
+
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
 
 export default function Earth() {
   const containerRef = useRef();
@@ -12,14 +14,14 @@ export default function Earth() {
     const scene = new THREE.Scene();
 
     // Create a new camera with a higher view distance
-    const camera = new THREE.PerspectiveCamera(75, 430 / 932, 0.1, 200); //second value is vp distance
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 200); //second value is vp distance
     camera.position.set(-25, 15, 20);
     camera.lookAt(0, 0, 0);
 
     // Create a renderer with a black background
     const renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(430, 932);
-    renderer.setClearColor(0x222222); // Greyish background
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x222222); // Black background
     containerRef.current.appendChild(renderer.domElement);
 
     // Create lighting
@@ -120,10 +122,5 @@ export default function Earth() {
     };
   }, []);
 
-  return  (
-    <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
-      <div ref={containerRef} style={{ width: '100%', height: '100%', position: 'absolute'}} />
-    </div>
-  );
-
+  return <div ref={containerRef} className={styles.earth}/>;
 }

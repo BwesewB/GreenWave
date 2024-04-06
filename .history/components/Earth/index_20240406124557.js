@@ -18,7 +18,7 @@ export default function Earth() {
 
     // Create a renderer with a black background
     const renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(430, 932);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor(0x222222); // Greyish background
     containerRef.current.appendChild(renderer.domElement);
 
@@ -120,10 +120,14 @@ export default function Earth() {
     };
   }, []);
 
-  return  (
-    <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
-      <div ref={containerRef} style={{ width: '100%', height: '100%', position: 'absolute'}} />
-    </div>
-  );
+  return  <div style={{
+
+  }}>
+            <div ref={containerRef} style={{ 
+            width: '100%', 
+            height: '100vh',
+            position: 'absolute'
+            }}/>
+          </div>;
 
 }
