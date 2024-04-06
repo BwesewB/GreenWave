@@ -8,7 +8,13 @@
   --raleway: 'Raleway', sans-serif;
   --poppins: 'Poppins', sans-serif;
 
-  --title: 96px;
+  --Title: 96px;
+  --h1: 48px;
+  --h2: 40px;
+  --h3: 32px;
+  --h4: 28px;
+  --h5: 24px;
+  --paragraph: 20px;
   --button:16px;
 }
 
