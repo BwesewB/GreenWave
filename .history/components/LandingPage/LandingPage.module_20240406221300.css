@@ -1,0 +1,9 @@
+.logoPlanit{
+    font-family: var(--poppins);
+    font-weight: bold;
+    font-size: var(--title);
+    color: var(--white);
+    text-align: center;
+    margin:0;
+    margin-top: 140px;
+}
