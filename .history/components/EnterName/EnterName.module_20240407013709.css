@@ -8,7 +8,6 @@
     margin:0;
     margin-top: 140px;
     height: 145px;
-    width:100%;
 }
 
 .catchphrase{
@@ -21,18 +20,14 @@
     height: 90px;
     margin: 0;
     width:100%;
-    margin-top:615px;
+    margin-top:330px;
 }
 
-.LandingPageButtons{
+.EnterNamePageButton{
     display: flex;
     flex-direction: column;
     position:absolute;
     top:770px;
     margin-left: 25px;
     margin-right: 25px;
-}
-
-.LandingPageButtonsSpacer{
-    height: 10px;
 }

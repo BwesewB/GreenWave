@@ -3,5 +3,7 @@
   height: '932px';
   margin: 0 auto;
   overflow: hidden;
+  background-color: transparent;
+  pointer-events: none;
 }
 
