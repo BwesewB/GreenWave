@@ -17,6 +17,8 @@ export default function ButtonColoured({
                     <button 
                         style={{ 
                             backgroundColor: bgColor, 
+                            transform: clicked ? "translateY(5px)" : "none",
+                            transition: "transform 0.2s ease"
                         }} 
                         className={`${styles.buttonStyling} ${clicked ? styles.clicked : ''}`} 
                         onMouseDown={() => setClicked(true)}

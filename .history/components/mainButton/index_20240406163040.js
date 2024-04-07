@@ -1,6 +1,5 @@
 import Link from "next/link"
 import styles from "@/components/mainButton/mainButton.module.css"
-import { useState } from "react";
 
 export default function ButtonColoured({
     href, 
@@ -8,20 +7,11 @@ export default function ButtonColoured({
     bgColor="var(--white)",
     primaryColor="var(--green)"
 }){
-    const [clicked, setClicked] = useState(false);
-
     return(
         <>
             <div className={styles.buttonWhole}>
                 <Link href={href}>
-                    <button 
-                        style={{ 
-                            backgroundColor: bgColor, 
-                        }} 
-                        className={`${styles.buttonStyling} ${clicked ? styles.clicked : ''}`} 
-                        onMouseDown={() => setClicked(true)}
-                        onMouseUp={() => setClicked(false)}
-                    >
+                    <button style={{ backgroundColor: bgColor}} className={styles.buttonStyling}>
                         <p style={{ color: primaryColor}} className={styles.buttonText}>
                             {text}
                         </p>
@@ -33,4 +23,3 @@ export default function ButtonColoured({
         </>
     )
 }
-

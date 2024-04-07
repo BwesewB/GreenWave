@@ -19,7 +19,6 @@
     height:50px;
     border:none;
     border-radius: 10px;
-    transition: 0.3s ease;
 }
 
 .clicked{
@@ -27,8 +26,7 @@
     height:50px;
     border:none;
     border-radius: 10px;
-    transform: translateY(5px);
-    transition: 0.3s ease;
+
 }
 
 .buttonLower{

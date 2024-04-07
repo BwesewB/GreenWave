@@ -10,6 +10,14 @@ export default function ButtonColoured({
 }){
     const [clicked, setClicked] = useState(false);
 
+    const handlePress = () => {
+        setClicked(true);
+    };
+
+    const handleRelease = () => {
+        setClicked(false);
+    };
+
     return(
         <>
             <div className={styles.buttonWhole}>
@@ -17,10 +25,12 @@ export default function ButtonColoured({
                     <button 
                         style={{ 
                             backgroundColor: bgColor, 
+                            transform: clicked ? "translateY(5px)" : "none",
+                            transition: "transform 0.3s ease"
                         }} 
-                        className={`${styles.buttonStyling} ${clicked ? styles.clicked : ''}`} 
-                        onMouseDown={() => setClicked(true)}
-                        onMouseUp={() => setClicked(false)}
+                        className={styles.buttonStyling} 
+                        onMouseDown={handlePress}
+                        onMouseUp={handleRelease}
                     >
                         <p style={{ color: primaryColor}} className={styles.buttonText}>
                             {text}
@@ -33,4 +43,3 @@ export default function ButtonColoured({
         </>
     )
 }
-

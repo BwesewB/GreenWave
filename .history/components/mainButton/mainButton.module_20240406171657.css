@@ -19,7 +19,6 @@
     height:50px;
     border:none;
     border-radius: 10px;
-    transition: 0.3s ease;
 }
 
 .clicked{
@@ -28,8 +27,8 @@
     border:none;
     border-radius: 10px;
     transform: translateY(5px);
-    transition: 0.3s ease;
-}
+    transition: transform 0.2s ease;
+  }
 
 .buttonLower{
     position:absolute;

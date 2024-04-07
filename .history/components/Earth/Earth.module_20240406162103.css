@@ -1,6 +1,7 @@
 .earthPosition{
     width: 100%;
     height: 932px;
+    z-index: -1;
     position: absolute;
     box-sizing: border-box;
     overflow: hidden;

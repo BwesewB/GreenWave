@@ -3,6 +3,7 @@
   height: '932px';
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
 }
 
 .logoPlanit{

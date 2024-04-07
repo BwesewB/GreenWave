@@ -13,7 +13,7 @@ export default function Home() {
       <HeadArea title="Welcome to Planit!" description="We are an environment app raising awareness on earths most pressing issues"/>
       <main className={`${styles.main}`}>
         <h1 className={styles.logoPlanit}>PlanIt</h1>
-        <ButtonColoured href="" text="GET STARTED"/>
+        <ButtonColoured href="" text="GET STARTED" backgroundColorInactive="green"/>
         <Earth/>
       </main>
     </>

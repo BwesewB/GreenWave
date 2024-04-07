@@ -3,7 +3,6 @@
     height:60px;
     margin:0 auto;
     position:relative;
-    overflow: hidden;
 }
 
 .buttonText{
@@ -19,23 +18,14 @@
     height:50px;
     border:none;
     border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-.clicked{
-    width:380px;
-    height:50px;
-    border:none;
-    border-radius: 10px;
-    transform: translateY(5px);
-    transition: 0.3s ease;
 }
 
 .buttonLower{
     position:absolute;
     width:380px;
     height:50px;
+    background-color: var(--green);
     border-radius: 10px;
     margin-top: -45px;
-    z-index: -1;
+
 }
