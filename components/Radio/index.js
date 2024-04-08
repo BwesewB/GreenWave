@@ -12,7 +12,7 @@ const Radio = ({ options, onSelect }) => {
 
   return (
     <div className={styles.radioContainer}>
-      {options.map((option) => (
+      {options && options.map((option) => (  // Added a check for options
         <div key={option.value} className={styles.rowContainer}>
           <input
             type="radio"

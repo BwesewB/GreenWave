@@ -1,34 +1,30 @@
 // pages/index.js
 
 import React, { useState } from 'react';
+import styles from "@/styles/Quiz.module.css"
+import ProgressF from '@/components/Quiz Components/Progress F';
+import Question1 from '@/components/Quiz Pages/Question 1';
+import Question2 from '@/components/Quiz Pages/Question 2';
+import Question3 from '@/components/Quiz Pages/Question 3';
+import Question4 from '@/components/Quiz Pages/Question 4';
+import Question5 from '@/components/Quiz Pages/Question 5';
 import Radio from '@/components/Radio';
 
-const options = [
-  { label: 'Car', value: 'option1' },
-  { label: 'Public Transit', value: 'option2' },
-  { label: 'Walking', value: 'option3' },
-  { label: 'Biking', value: 'option4' }, // Added fourth option
-];
-
-const Home = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
-
-  const handleOptionSelect = (value) => {
-    setSelectedOption(value);
-  };
-
-  return (
-    <div>
+export default function Home() {
+    
+return (
+    <div className={styles.mainQuiz}>
         <style jsx global>{`
                 body {
                     margin: 0px;
                 }
                 `}
                 </style>
-      <Radio options={options} onSelect={handleOptionSelect} />
-      <img src='/images/quizbackground.jpeg' alt='Outer Space Image' width={430} height={932}></img>
+                <Question1/>
+                <Radio/>
+
+      <img src='/images/quizbackground.jpeg' alt='Outer Space Image' width={430} height={932}  style={{display: 'none'}}className={styles.space}></img>
     </div>
   );
 };
 
-export default Home;
