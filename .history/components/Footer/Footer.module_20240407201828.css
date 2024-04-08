@@ -9,7 +9,7 @@
     width: 380px;
     height: 47px;
     flex-shrink: 0;
-    background: var(--black);
+    background: var(--space-black, #0C0C0C);
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -21,10 +21,10 @@
 }
 
 .footerButton {
-    color: var(--white);
+    color: var(--Calm-WHite, #F2F5EA);
     background-color: transparent;
     border: none;
-    font-family: var(--poppins);
+    font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
