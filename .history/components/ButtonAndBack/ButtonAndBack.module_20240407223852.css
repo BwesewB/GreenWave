@@ -11,12 +11,10 @@
     font-family: var(--poppins);
     font-size: var(--button);
     color: var(--white);
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 .backButton{
     display: flex;
     align-items: center;
-    border:none;
-    background:none;
 }

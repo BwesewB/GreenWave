@@ -1,9 +1,12 @@
 import ButtonAndBack from "@/components/ButtonAndBack";
 import MainText from "@/components/MainText";
 import { useRouter } from "next/router";
-import { useState } from "react";
 
 export default function ActionPlanner({ handleGoHomeClick }){
+
+    const router = useRouter();
+
+    const
 
     return(
         <>

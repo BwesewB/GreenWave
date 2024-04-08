@@ -34,12 +34,6 @@ export default function Home() {
     setShowActionPlanner(true)
   }
 
-  const handleHomePage = () => {
-    console.log("handle triggered")
-    setShowActionPlanner(false)
-    setShowHomepage(true);
-  }
-
   return (
     <>
       <HeadArea title="Welcome to Planit!" description="We are an environment app raising awareness on earths most pressing issues"/>
@@ -47,8 +41,7 @@ export default function Home() {
         {showLandingPage && (
           <LandingPage handleGetStartedClick={handleGetStarted}/>
         )}
-        {showEnterName && <EnterName/>} 
-        {/* this renders the page so if you want to rerender it from another page using back, you dont add this line again. */}
+        {showEnterName && <EnterName/>}
 
         {showEnterName && (
           <EnterName handleContinueClick={handleContinue}/>
@@ -60,9 +53,6 @@ export default function Home() {
         )}
         {showActionPlanner && <ActionPlanner/>}
 
-        {showActionPlanner && (
-          <ActionPlanner handleGoHomeClick={handleHomePage}/>
-        )}
         
         <Earth/>
       </main>
