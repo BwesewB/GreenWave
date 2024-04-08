@@ -6,7 +6,7 @@ export default function ButtonAndBack({ linking, buttonText, buttonColorBg, butt
         <>
         <div className={styles.bothButtons}>
             <ButtonColoured
-                href={linking}
+                href=""
                 text={buttonText}
                 bgColor={buttonColorBg}
                 primaryColor={buttonColorPrimary}

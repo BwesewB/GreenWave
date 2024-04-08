@@ -49,7 +49,7 @@ export default function Home() {
         {showHomepage && <HomePage/>}
         
         {showHomepage && (
-          <Footer handleActionPlannerClick={handleActionPlanner}/>
+          <HomePage handleActionPlannerClick={handleActionPlanner}/>
         )}
         {showActionPlanner && <ActionPlanner/>}
 

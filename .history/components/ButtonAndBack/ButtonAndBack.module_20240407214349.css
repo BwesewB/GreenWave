@@ -7,8 +7,7 @@
     width:100%;
 }
 
-.backButton p{
+.backButton{
     font-family: var(--poppins);
     font-size: var(--button);
-    color: var(--white);
 }

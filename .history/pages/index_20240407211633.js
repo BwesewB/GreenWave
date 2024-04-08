@@ -48,10 +48,10 @@ export default function Home() {
         )}
         {showHomepage && <HomePage/>}
         
-        {showHomepage && (
-          <Footer handleActionPlannerClick={handleActionPlanner}/>
+        {showEnterName && (
+          <HomePage handleActionPlannerClick={handleActionPlanner}/>
         )}
-        {showActionPlanner && <ActionPlanner/>}
+        {showHomepage && <ActionPlanner/>}
 
         <Earth/>
       </main>

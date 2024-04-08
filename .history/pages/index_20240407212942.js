@@ -8,6 +8,7 @@ import LandingPage from "@/components/MainPageComponents/LandingPage";
 import EnterName from "@/components/MainPageComponents/EnterName";
 import HomePage from "@/components/MainPageComponents/HomePage";
 import ActionPlanner from "@/components/MainPageComponents/ActionPlanner";
+import Footer from "@/components/Footer";
 
 //Hi, so our idea requires earth to move dynaimcally around the screen, meaning that for this page we are only changing the elements and keeping the earth on one page for smoother animation of earth
 

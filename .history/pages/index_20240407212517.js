@@ -48,10 +48,7 @@ export default function Home() {
         )}
         {showHomepage && <HomePage/>}
         
-        {showHomepage && (
-          <Footer handleActionPlannerClick={handleActionPlanner}/>
-        )}
-        {showActionPlanner && <ActionPlanner/>}
+
 
         <Earth/>
       </main>
