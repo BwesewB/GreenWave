@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from "./Radio.module.css"
+import styles from "./Radio.module.css";
 
-const Radio = ({ options, onSelect }) => {
+const Radio = ({ options, onSelect, customRadioStyle }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionChange = (event) => {
@@ -11,8 +11,8 @@ const Radio = ({ options, onSelect }) => {
   };
 
   return (
-    <div className={styles.radioContainer}>
-      {options && options.map((option) => (  // Added a check for options
+    <div className={`${styles.radioContainer}`} style={customRadioStyle}>
+      {options && options.map((option) => (
         <div key={option.value} className={styles.rowContainer}>
           <input
             type="radio"
