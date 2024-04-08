@@ -16,12 +16,11 @@
     color: var(--white);
     text-align: center;
     font-family: var(--raleway);
-    font-size: var(--button);
-    line-height: 30px;
+    line-height: 40px;
     height: 90px;
     margin: 0;
     width:100%;
-    margin-top:615px;
+    margin-top:600px;
 }
 
 .LandingPageButtons{

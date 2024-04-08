@@ -4,17 +4,20 @@ import { useState } from "react";
 import ButtonAndBack from "@/components/ButtonAndBack";
 import Answers1 from "@/components/Quiz Components/Radio Answers/Answers 1";
 
-export default function Question1() {
+export default function Question1({ handleQuizNext1Click }) {
+
+  const handleContinueClick = () => {
+    console.log("Continue button clicked");
+    handleQuizNext1Click();
+  };
+
   return (
     <div>
       <Questions questionText="What is your primary mode of transportation for commuting?" />
       <ButtonAndBack
         linking=''
         buttonText='CONTINUE'
-        buttonColorBg='var(--white)'
-        buttonColorPrimary='var(--green)'
-
-
+        onClickHandlerSecondaryMainButton={handleContinueClick}
       />
       <Answers1 />
     </div>
