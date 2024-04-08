@@ -1,6 +1,5 @@
 import React from 'react';
 import Radio from '@/components/Radio';
-import styles from '@/components/Radio/Radio.module.css';
 
 const options = [
   { label: 'Yes', value: 'option1' },
@@ -16,7 +15,6 @@ const Answers5 = ({ customRadioStyle }) => {
 
   return (
     <div>
-      {/* Use the Radio component with custom styles */}
       <Radio options={options} onSelect={handleOptionSelect} customRadioStyle={customRadioStyle} />
     </div>
   );

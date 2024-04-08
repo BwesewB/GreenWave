@@ -8,7 +8,6 @@ import Question2 from '@/components/Quiz Pages/Question 2';
 import Question3 from '@/components/Quiz Pages/Question 3';
 import Question4 from '@/components/Quiz Pages/Question 4';
 import Question5 from '@/components/Quiz Pages/Question 5';
-import Answers1 from '@/components/Quiz Components/Radio Answers/Answers 1';
 
 export default function Home() {
 
@@ -66,7 +65,6 @@ return (
                 )}
                 {showQuestionFive && <Question5/>}
 
-                <Radio/>
 
       <img src='/images/quizbackground.jpeg' alt='Outer Space Image' width={430} height={932} className={styles.space}></img>
 

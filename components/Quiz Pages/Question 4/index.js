@@ -2,7 +2,6 @@ import React from "react";
 import Questions from "@/components/Questions";
 import Answers4 from "@/components/Quiz Components/Radio Answers/Answers 4";
 import ButtonAndBack from "@/components/ButtonAndBack";
-import ButtonAndBack from "@/components/ButtonAndBack";
 
 export default function Question4({ handleQuizNext4Click }) {
 
