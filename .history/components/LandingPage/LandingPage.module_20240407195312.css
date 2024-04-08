@@ -20,7 +20,7 @@
     line-height: 30px;
     height: 90px;
     margin: 0;
-    width:100%;
+    margin-left: 25px;
     margin-top:615px;
 }
 
@@ -29,7 +29,8 @@
     flex-direction: column;
     position:absolute;
     top:770px;
-    width:100%;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .LandingPageButtonsSpacer{
