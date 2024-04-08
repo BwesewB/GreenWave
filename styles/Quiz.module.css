@@ -1,0 +1,16 @@
+.mainQuiz {
+    width: 430px;
+    height: 932px;
+    margin: 0;
+    background-color: navy;
+}
+
+.space{
+    margin: 0px;
+    z-index: -1;
+}
+
+/*<img src="/images/quizbackground.jpeg" alt="Image of Outer Space" className={styles.space} width={430} height={932}></img>*/
+/*<RadioButton isChecked={isChecked} onChange={handleChange}/>*/
+
+

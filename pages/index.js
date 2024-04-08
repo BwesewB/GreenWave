@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Earth from "@/components/Earth";
+import Footer from "@/components/Footer"
 import HeadArea from "@/components/HeadArea";
 import ButtonColoured from "@/components/mainButton";
 
@@ -14,7 +15,8 @@ export default function Home() {
       <main className={`${styles.main} `}>
         <div>heollloo</div>
         {/* <ButtonColoured/> */}
-        <Earth/>
+          <Earth/>
+          <Footer/>
       </main>
     </>
   );
