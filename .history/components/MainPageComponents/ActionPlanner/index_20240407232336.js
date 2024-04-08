@@ -3,7 +3,15 @@ import MainText from "@/components/MainText";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-export default function ActionPlanner({ handleGoHomeClick }){
+export default function ActionPlanner(){
+    // const [showHomepage, setShowHomepage] = useState(false);
+    const router = useRouter();
+
+    const handleGoHomeClick = () => {
+        console.log("Button clicked");
+        // setShowHomepage(true);
+        router.push('/')
+    };
 
     return(
         <>

@@ -20,7 +20,7 @@ export default function ButtonAndBack({
                 primaryColor={buttonColorPrimary}
                 onClickHandler={onClickHandlerSecondaryMainButton}
             />
-            <button 
+            <div 
                 onClick={handleBackClick} 
                 className={styles.backButton}
             >
@@ -31,7 +31,7 @@ export default function ButtonAndBack({
                     height={10} 
                 />
                 <p>Back</p>
-            </button>
+            </div>
         </div>
 
         </>

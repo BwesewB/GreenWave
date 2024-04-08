@@ -35,7 +35,6 @@ export default function Home() {
   }
 
   const handleHomePage = () => {
-    console.log("handle triggered")
     setShowActionPlanner(false)
     setShowHomepage(true);
   }
@@ -47,8 +46,7 @@ export default function Home() {
         {showLandingPage && (
           <LandingPage handleGetStartedClick={handleGetStarted}/>
         )}
-        {showEnterName && <EnterName/>} 
-        {/* this renders the page so if you want to rerender it from another page using back, you dont add this line again. */}
+        {showEnterName && <EnterName/>}
 
         {showEnterName && (
           <EnterName handleContinueClick={handleContinue}/>
@@ -63,6 +61,7 @@ export default function Home() {
         {showActionPlanner && (
           <ActionPlanner handleGoHomeClick={handleHomePage}/>
         )}
+        {showHomepage && <HomePage/>}
         
         <Earth/>
       </main>
