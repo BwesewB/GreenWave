@@ -1,0 +1,25 @@
+.logoPlanit{
+    position:absolute;
+    font-family: var(--poppins);
+    font-weight: bold;
+    font-size: var(--title);
+    color: var(--white);
+    text-align: center;
+    margin:0;
+    margin-top: 140px;
+    height: 145px;
+    width:100%;
+}
+
+.inputArea p{
+    color: var(--white);
+    
+}
+
+.EnterNamePageButton{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:770px;
+    width:100%;
+}
