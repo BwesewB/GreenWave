@@ -1,13 +1,10 @@
-import styles from "./Questions.module.css"
+import React from "react";
+import styles from "./Questions.module.css";
 
-export default function Questions(){
-    return(
-        <>
-            <div className={styles.questionsContainer}>
-                <p className={styles.questions}>
-                    Q: What is your primary mode of transportation for commuting?
-                </p>
-            </div>
-        </>
-    )
+export default function Questions({ questionText }) {
+  return (
+    <div className={styles.questionsContainer}>
+      <p className={styles.questions}>Q: {questionText}</p>
+    </div>
+  );
 }
