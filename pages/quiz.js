@@ -10,7 +10,34 @@ import Question4 from '@/components/Quiz Pages/Question 4';
 import Question5 from '@/components/Quiz Pages/Question 5';
 import Radio from '@/components/Radio';
 
+
 export default function Home() {
+
+  const [showQuestionOne, setShowQuestionOne] = useState(true);
+  const [showQuestionTwo, setShowQuestionTwo] = useState(false);
+  const [showQuestionThree, setShowQuestionThree] = useState(false);
+  const [showQuestionFour, setShowQuestionFour] = useState(false);
+  const [showQuestionFive, setShowQuestionFive] = useState(false);
+
+  const handleQuestionTwo = () => {
+    setShowQuestionOne(false)
+    setShowQuestionTwo(true)
+  }
+
+  const handleQuestionThree = () => {
+    setShowQuestionTwo(false)
+    setShowQuestionThree(true)
+  }
+
+  const handleQuestionFour = () => {
+    setShowQuestionThree(false)
+    setShowQuestionFour(true)
+  }
+
+  const handleQuestionFive = () => {
+    setShowQuestionFour(false)
+    setShowQuestionFive(true)
+  }
     
 return (
     <div className={styles.mainQuiz}>
@@ -20,10 +47,30 @@ return (
                 }
                 `}
                 </style>
-                <Question1/>
+                {showQuestionOne && (
+                  <Question1 handleQuizNext1Click={handleQuestionTwo}/>
+                )}
+                {showQuestionTwo && <Question2/>}
+
+                {showQuestionTwo && (
+                  <Question2 handleQuizNext2Click={handleQuestionThree}/>
+                )}
+                {showQuestionThree && <Question3/>}
+
+                {showQuestionThree && (
+                  <Question3 handleQuizNext3Click={handleQuestionFour}/>
+                )}
+                {showQuestionFour && <Question4/>}
+
+                {showQuestionFour && (
+                  <Question4 handleQuizNext4Click={handleQuestionFive}/>
+                )}
+                {showQuestionFive && <Question5/>}
+
                 <Radio/>
 
-      <img src='/images/quizbackground.jpeg' alt='Outer Space Image' width={430} height={932}  style={{display: 'none'}}className={styles.space}></img>
+      <img src='/images/quizbackground.jpeg' alt='Outer Space Image' width={430} height={932} className={styles.space}></img>
+
     </div>
   );
 };
