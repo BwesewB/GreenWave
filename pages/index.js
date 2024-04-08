@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "@/styles/Home.module.css";
 import Earth from "@/components/Earth";
+import Footer from "@/components/Footer"
 import HeadArea from "@/components/HeadArea";
 import LandingPage from "@/components/LandingPage";
 import EnterName from "@/components/EnterName";

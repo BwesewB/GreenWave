@@ -125,6 +125,7 @@ export default function Earth() {
 
   return (
     <div className={styles.earthPosition}>
+
       <div ref={containerRef} className={styles.earthCentering}/>
     </div>
   );
