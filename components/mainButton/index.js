@@ -7,6 +7,7 @@ export default function ButtonColoured({
     text,
     bgColor="var(--white)",
     primaryColor="var(--green)",
+    tabbingButton="",
     onClickHandler
 }){
     const [clicked, setClicked] = useState(false);
@@ -20,7 +21,9 @@ export default function ButtonColoured({
 
     return(
         <>
-            <div className={styles.buttonWhole}>
+            <div className={styles.buttonWhole}
+                tabIndex={tabbingButton}
+            >
                 <Link href={href}>
                     <button 
                         style={{ 
