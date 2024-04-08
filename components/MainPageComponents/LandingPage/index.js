@@ -5,7 +5,7 @@ export default function LandingPage({ handleGetStartedClick }){
     return(
         <>
             <h1 className={styles.logoPlanit}>PlanIt</h1>
-            <p className={styles.catchphrase}>YOUR ACTIONS, OUR FUTURE: <br></br> MAKING A DIFFERENCE<br></br>ONE STEP AT A TIME</p>
+            <h5 className={styles.catchphrase}>YOUR ACTIONS, OUR FUTURE: <br></br> MAKING A DIFFERENCE<br></br>ONE STEP AT A TIME</h5>
             <div className={styles.LandingPageButtons}>
                 <ButtonColoured 
                     href=""
