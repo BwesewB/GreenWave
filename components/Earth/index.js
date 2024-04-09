@@ -14,7 +14,7 @@ export default function Earth() {
 
     // Create a new camera with a higher view distance
     const camera = new THREE.PerspectiveCamera(75, 430 / 932, 0.1, 200); //second value is vp distance
-    camera.position.set(-25, 15, 20);
+    camera.position.set(-25, 15, 40);
     camera.lookAt(0, 0, 0);
 
     // Create a renderer with a black background

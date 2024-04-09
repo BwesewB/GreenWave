@@ -4,9 +4,15 @@ import Answers5 from "@/components/Quiz Components/Radio Answers/Answers 5";
 import ButtonColoured from "@/components/mainButton";
 import styles from '@/components/MainPageComponents/EnterName/EnterName.module.css'
 
-export default function Question5() {
+export default function Question5({ handleQuizCompleteClick }) {
   const customRadioStyle = {
     marginTop: '427px',
+  };
+
+
+  const handleContinueClick = () => {
+    console.log("FINISH clicked");
+    handleQuizCompleteClick();
   };
 
   return (
@@ -16,7 +22,8 @@ export default function Question5() {
       <div className={styles.EnterNamePageButton}>
         {/* This is just from the enterName to copy the css from there */}
         <ButtonColoured
-          href="/quizComplete"
+          onClickHandlerSecondaryMainButton={handleContinueClick}
+          href="/"
           text="FINISH"
         />
       </div>

@@ -14,7 +14,7 @@ const Answers1 = () => {
   };
 
   return (
-    <div>
+    <div tabIndex="2">
       <Radio options={options} onSelect={handleOptionSelect} />
     </div>
   );

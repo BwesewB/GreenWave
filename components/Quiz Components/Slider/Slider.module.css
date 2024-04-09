@@ -41,7 +41,7 @@
     margin-top: -5px; /* Adjust as needed to center vertically */
   }
   
-  .slider::-moz-range-thumb {
+  /* .slider::-moz-range-thumb {
     width: 27px;
     height: 27px;
     background-color: #0BAA81;
@@ -49,5 +49,5 @@
     border-radius: 50%;
     cursor: pointer;
     margin-top: 0px;
-  }
+  } */
   

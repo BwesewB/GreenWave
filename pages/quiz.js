@@ -36,7 +36,7 @@ export default function Home() {
     setShowQuestionFour(false)
     setShowQuestionFive(true)
   }
-    
+
 return (
     <div className={styles.mainQuiz}>
         <style jsx global>{`

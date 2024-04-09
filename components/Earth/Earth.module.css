@@ -1,5 +1,8 @@
 .earthPosition{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     height: 932px;
     position: absolute;
     box-sizing: border-box;

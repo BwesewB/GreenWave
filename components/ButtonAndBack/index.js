@@ -8,6 +8,8 @@ export default function ButtonAndBack({
     buttonColorBg, 
     buttonColorPrimary, 
     onClickHandlerSecondaryMainButton, 
+    // tabbingBack="",
+    tabbingButtonSecondary="",
     handleBackClick 
 }){
     return(
@@ -19,6 +21,8 @@ export default function ButtonAndBack({
                 bgColor={buttonColorBg}
                 primaryColor={buttonColorPrimary}
                 onClickHandler={onClickHandlerSecondaryMainButton}
+                tabbingButton={tabbingButtonSecondary}
+
             />
             <button 
                 onClick={handleBackClick} 

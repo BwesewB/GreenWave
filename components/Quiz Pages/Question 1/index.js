@@ -13,11 +13,16 @@ export default function Question1({ handleQuizNext1Click }) {
 
   return (
     <div>
-      <Questions questionText="What is your primary mode of transportation for commuting?" />
+      <Questions 
+        questionText="What is your primary mode of transportation for commuting?" 
+        
+      />
       <ButtonAndBack
         linking=''
         buttonText='CONTINUE'
         onClickHandlerSecondaryMainButton={handleContinueClick}
+        tabbingButtonSecondary="3"
+
       />
       <Answers1 />
     </div>
