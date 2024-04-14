@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function EnterName({ handleContinueClick }){
 
-    const nameRegex = /^(?!.*\b(fuck|shit|asshole|bitch|damn|gyatt)\b)[a-zA-Z]{3,}$/i;
+    const nameRegex = /^(?!.*\b(fuck|shit|asshole|bitch|damn)\b)[a-zA-Z]{3,}$/i;
     const[firstName, setFirstName] = useState('')
     const firstNameValid = nameRegex.test(firstName);
 
