@@ -1,0 +1,10 @@
+.headerSection{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.headerSectionWords{
+    font-family: var(--poppins);
+    color: var(--white);
+}
