@@ -5,7 +5,6 @@ import { useState } from "react";
 export default function EnterName({ handleContinueClick }){
 
     const nameRegex = /^(?!.*(.)\1\1)(?!.*\b(fuck|shit|asshole|bitch|damn|gyatt)\b)[a-zA-Z]{3,}$/i;
-    //no three consecutive characters, no inputs less than three characters, nothing besides letters, no profanity
     const[firstName, setFirstName] = useState('')
     const firstNameValid = nameRegex.test(firstName);
 

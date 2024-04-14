@@ -40,10 +40,6 @@
     
 }
 
-.nameInput:focus{
-    outline:none;
-}
-
 .EnterNamePageButton{
     display: flex;
     flex-direction: column;
