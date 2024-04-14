@@ -29,16 +29,7 @@ export default function EnterName({ handleContinueClick }){
                         onClickHandler={handleContinueClick}
                     />
                 </div>
-            ) : 
-                <div className={styles.EnterNamePageButton}>
-                    <ButtonColoured 
-                        href=""
-                        text="CONTINUE"
-                        bgColor="#D9D8D2"
-                        primaryColor="#065C4C"
-                    />
-                </div>
-        }
+            ) : null}
 
         </>
     )

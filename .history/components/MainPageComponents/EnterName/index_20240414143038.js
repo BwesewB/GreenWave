@@ -36,6 +36,7 @@ export default function EnterName({ handleContinueClick }){
                         text="CONTINUE"
                         bgColor="#D9D8D2"
                         primaryColor="#065C4C"
+                        onClickHandler={handleContinueClick}
                     />
                 </div>
         }

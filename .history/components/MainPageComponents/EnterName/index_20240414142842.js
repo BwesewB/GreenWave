@@ -34,8 +34,9 @@ export default function EnterName({ handleContinueClick }){
                     <ButtonColoured 
                         href=""
                         text="CONTINUE"
-                        bgColor="#D9D8D2"
-                        primaryColor="#065C4C"
+                        bgColor=""
+                        primaryColor="#000000"
+                        onClickHandler={handleContinueClick}
                     />
                 </div>
         }

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function EnterName({ handleContinueClick }){
 
-    const nameRegex = /^[a-zA-Z]{3,}$/;
+    const nameRegex = /^[a-zA-Z]{2,}$/;
     const[firstName, setFirstName] = useState('')
     const firstNameValid = nameRegex.test(firstName);
 
@@ -29,16 +29,7 @@ export default function EnterName({ handleContinueClick }){
                         onClickHandler={handleContinueClick}
                     />
                 </div>
-            ) : 
-                <div className={styles.EnterNamePageButton}>
-                    <ButtonColoured 
-                        href=""
-                        text="CONTINUE"
-                        bgColor="#D9D8D2"
-                        primaryColor="#065C4C"
-                    />
-                </div>
-        }
+            ) : null}
 
         </>
     )
