@@ -15,9 +15,6 @@
 }
 
 .homePagePhrase{
-    position:absolute;
     font-family: var(--poppins);
     color: var(--white);
-    margin-top: 540px;
-    margin-left: 40px;
 }

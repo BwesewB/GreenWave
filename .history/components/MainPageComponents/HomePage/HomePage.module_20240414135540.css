@@ -1,0 +1,13 @@
+
+.coolAPIArea{
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position:absolute;
+    right:100;
+}
+
+.timeZone, .userTime{
+    font-family: var(--poppins);
+    color: var(--white);
+}

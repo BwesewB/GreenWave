@@ -43,8 +43,10 @@ export default function HomePage(){
             <div className={styles.coolAPIArea}>
                 <h5 className={styles.userTime}>{formatTime(userTime)}</h5>
                 <h4 className={styles.timeZone}>{timezone}</h4>
+
             </div>
-            <p className={styles.homePagePhrase}>MAKING A DIFFERENCE<br></br>ONE STEP AT A TIME</p>
+
+            <p>MAKING A DIFFERENCE<br></br>ONE STEP AT A TIME</p>
             <Footer/>
         </>
     )
