@@ -1,0 +1,9 @@
+.headerSection{
+    display:flex;
+    width:100%;
+}
+
+.headerSectionWords{
+    font-family: var(--poppins);
+    color: var(--white);
+}
