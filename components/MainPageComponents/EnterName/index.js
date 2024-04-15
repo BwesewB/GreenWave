@@ -29,7 +29,10 @@ export default function EnterName({ handleContinueClick }){
                 {firstNameValid ? (
                         <div>
                             <ButtonColoured 
-                                href=""
+                                href={{
+                                    pathname: '/',
+                                    query: { name: firstName }
+                                  }}
                                 text="CONTINUE"
                                 onClickHandler={handleContinueClick}
                             />
