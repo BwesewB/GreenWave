@@ -1,8 +1,8 @@
 // pages/index.js
 
 import React, { useState } from 'react';
-import styles from "@/styles/Quiz.module.css"
-import ProgressF from '@/components/Quiz Components/Progress F';
+import styles from "@/styles/Quiz.module.css";
+import ProgressBar from '@/components/Quiz Components/ProgTest';
 import Question1 from '@/components/Quiz Pages/Question 1';
 import Question2 from '@/components/Quiz Pages/Question 2';
 import Question3 from '@/components/Quiz Pages/Question 3';
@@ -37,38 +37,32 @@ export default function Home() {
     setShowQuestionFive(true)
   }
 
-return (
+  return (
     <div className={styles.mainQuiz}>
-        <style jsx global>{`
-          body {
-              margin: 0px;
-          }
-          `}
-          </style>
-          {showQuestionOne && (
-            <Question1 handleQuizNext1Click={handleQuestionTwo}/>
-          )}
-          {showQuestionTwo && <Question2/>}
+      <style jsx global>{`
+        body {
+          margin: 0px;
+        }
+      `}
+      </style>
+      <ProgressBar/>
+      {showQuestionOne && (
+        <Question1 handleQuizNext1Click={handleQuestionTwo}/>
+      )}
+      {showQuestionTwo && (
+        <Question2 handleQuizNext2Click={handleQuestionThree}/>
+      )}
+      {showQuestionThree && (
+        <Question3 handleQuizNext3Click={handleQuestionFour}/>
+      )}
+      {showQuestionFour && (
+        <Question4 handleQuizNext4Click={handleQuestionFive}/>
+      )}
+      {showQuestionFive && (
+        <Question5/>
+      )}
 
-          {showQuestionTwo && (
-            <Question2 handleQuizNext2Click={handleQuestionThree}/>
-          )}
-          {showQuestionThree && <Question3/>}
-
-          {showQuestionThree && (
-            <Question3 handleQuizNext3Click={handleQuestionFour}/>
-          )}
-          {showQuestionFour && <Question4/>}
-
-          {showQuestionFour && (
-            <Question4 handleQuizNext4Click={handleQuestionFive}/>
-          )}
-          {showQuestionFive && <Question5/>}
-
-
-      <img src='/images/quizbackground.jpeg' alt='Outer Space Image' width={430} height={932} className={styles.space}></img>
-
+      <img src='/images/quizbackground.jpeg' alt='Outer Space Image' width={430} height={932} className={styles.space} />
     </div>
   );
 };
-

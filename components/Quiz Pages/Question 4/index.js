@@ -19,6 +19,8 @@ export default function Question4({ handleQuizNext4Click }) {
         buttonColorBg='var(--white)'
         buttonColorPrimary='var(--green)'
         onClickHandlerSecondaryMainButton={handleContinueClick}
+        nextQuestionHandler={handleQuizNext4Click}
+
 
 
       />

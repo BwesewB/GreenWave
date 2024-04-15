@@ -18,6 +18,7 @@ export default function Question2({ handleQuizNext2Click }) {
         linking=''
         buttonText='CONTINUE'
         onClickHandlerSecondaryMainButton={handleContinueClick}
+        nextQuestionHandler={handleQuizNext2Click}
       />
     </div>
   );

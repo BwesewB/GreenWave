@@ -4,7 +4,7 @@
     margin-top: 465px;
     height: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -41,13 +41,14 @@
     margin-top: -5px; /* Adjust as needed to center vertically */
   }
   
-  /* .slider::-moz-range-thumb {
-    width: 27px;
-    height: 27px;
-    background-color: #0BAA81;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.60));
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 0px;
-  } */
+  .sliderValue {
+    color: var(--white);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
   
