@@ -21,7 +21,7 @@ export default function Question5({ handleQuizCompleteClick }) {
       <div className={styles.EnterNamePageButton}>
         {/* This is just from the enterName to copy the css from there */}
         <ButtonColoured
-          href="/"
+          href="#"
           text="FINISH"
           onClickHandler={handleQuizCompleteClick}
         />

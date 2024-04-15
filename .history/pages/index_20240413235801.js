@@ -73,10 +73,10 @@ export default function Home() {
         )}
         {showActionPlanner && <ActionPlanner/>}
 
-        {/* {showLandingPage && (
+        {showLandingPage && (
           <Question5 handleQuizCompleteClick={handleQuizComplete} />
         )}
-        {showQuizComplete && <QuizComplete/>} */}
+        {showQuizComplete && <QuizComplete/>}
 
         <Earth/>
       </main>

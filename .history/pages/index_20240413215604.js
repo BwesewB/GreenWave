@@ -25,26 +25,22 @@ export default function Home() {
   const handleGetStarted = () => {
     setShowLandingPage(false); // Hide LandingPage component
     setShowEnterName(true); // Show EnterName component
-    console.log('1', showLandingPage);
   };
 
   const handleContinue = () => {
     setShowEnterName(false);
     setShowHomepage(true);
-    console.log('2', showLandingPage);
   }
 
   const handleActionPlanner = () => {
     setShowHomepage(false);
     setShowActionPlanner(true)
-    console.log('3', showLandingPage);
   }
 
   const handleHomePage = () => {
     console.log("handle triggered")
     setShowActionPlanner(false)
     setShowHomepage(true);
-    console.log('4', showLandingPage);
   }
 
   const handleQuizComplete = () => {
@@ -72,6 +68,10 @@ export default function Home() {
           <Footer handleActionPlannerClick={handleActionPlanner}/>
         )}
         {showActionPlanner && <ActionPlanner/>}
+
+        {showActionPlanner && (
+          <ActionPlanner handleGoHomeClick={handleHomePage}/>
+        )}
 
         {/* {showLandingPage && (
           <Question5 handleQuizCompleteClick={handleQuizComplete} />

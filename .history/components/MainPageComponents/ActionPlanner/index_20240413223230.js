@@ -3,6 +3,7 @@ import MainText from "@/components/MainText";
 import Header from "@/components/Header";
 
 export default function ActionPlanner({ handleGoHomeClick }){
+
     return(
         <>
             <Header src="/icons/Home.svg" width="30" height="32"/>

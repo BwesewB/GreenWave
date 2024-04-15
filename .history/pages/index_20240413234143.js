@@ -50,6 +50,7 @@ export default function Home() {
   const handleQuizComplete = () => {
     setShowLandingPage(false)
     setShowQuizComplete(true)
+    console.log('5', showLandingPage);
     console.log("working correctly")
   }
 
@@ -76,6 +77,7 @@ export default function Home() {
         {/* {showLandingPage && (
           <Question5 handleQuizCompleteClick={handleQuizComplete} />
         )}
+
         {showQuizComplete && <QuizComplete/>} */}
 
         <Earth/>
