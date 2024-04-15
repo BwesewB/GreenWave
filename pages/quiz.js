@@ -8,6 +8,7 @@ import Question2 from '@/components/Quiz Pages/Question 2';
 import Question3 from '@/components/Quiz Pages/Question 3';
 import Question4 from '@/components/Quiz Pages/Question 4';
 import Question5 from '@/components/Quiz Pages/Question 5';
+import quizComplete from '@/components/Quiz Pages/QuizComplete';
 
 export default function Home() {
 
