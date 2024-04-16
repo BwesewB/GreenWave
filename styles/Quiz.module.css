@@ -1,7 +1,7 @@
 .mainQuiz {
     width: 430px;
     height: 932px;
-    margin: 0;
+    margin-left: 640px;
     background:transparent;
     z-index: -999
 }
@@ -11,6 +11,5 @@
     z-index: -999;
 }
 
-/*<RadioButton isChecked={isChecked} onChange={handleChange}/>*/
 
 

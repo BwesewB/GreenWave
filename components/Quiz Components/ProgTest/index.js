@@ -2,12 +2,15 @@ import React from 'react';
 import styles from './ProgTest.module.css';// Import CSS module for styling
 
 const ProgressBar = ({ currentQuestion }) => {
+
+  const progress = ( currentQuestion - 1 ) / 5 * 100;
+
   const circlePosition = {
-    left: `${((currentQuestion - 1) / 5) * (100 - (25 / 280 * 100))}%`, // Adjusted calculation
+    left: `calc(${progress}% - 12px)`, // Adjusted calculation
   };
 
   const progressBarWidth = {
-    width: `${((currentQuestion - 1) / 5) * 100}%`, // Updated calculation
+    width: `${progress}%`, // Updated calculation
   };
 
   return (

@@ -2,15 +2,16 @@ import React from 'react';
 import Radio from '@/components/Radio';
 
 const options = [
-  { label: 'Car', value: 'option1' },
-  { label: 'Public Transit', value: 'option2' },
-  { label: 'Walking', value: 'option3' },
-  { label: 'Biking', value: 'option4' }, // Added fourth option
+  { label: 'Walking', value: 'option1' },
+  { label: 'Biking', value: 'option2' },
+  { label: 'Public Transit', value: 'option3' },
+  { label: 'Car', value: 'option4' },
 ];
 
-const Answers1 = () => {
+const Answers1 = ({ onOptionChange }) => {
   const handleOptionSelect = (value) => {
-    // Handle selected option logic if needed
+    console.log("Option selected: ", value);  // You can add any specific logic here
+    onOptionChange(value);  // Then pass the selected value up to the parent component
   };
 
   return (

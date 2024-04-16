@@ -4,7 +4,7 @@
     box-sizing: border-box;
     overflow: hidden;
     top:320px;
-    left:0;
+    left: 640px;
     width: 380px;
     color: var(--white);
 }

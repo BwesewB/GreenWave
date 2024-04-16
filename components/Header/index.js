@@ -12,7 +12,7 @@ export default function Header(
                 <div><Image src={src} width={width} height={height}  className={styles.headerSectionIconLeft}/></div>
                 <div className={styles.headerSectionWords}>
                     <h1 className={styles.headerSectionH1}>PlanIt</h1>
-                    <h4 className={styles.headerSectionH2}>PALCEHOLDER</h4>
+                    <h4 className={styles.headerSectionH2}>PLACEHOLDER</h4>
                 </div>
                 <div><Image src="/icons/settings.svg" width={40} height={40} className={styles.headerSectionIconRight}/></div>
             </header>

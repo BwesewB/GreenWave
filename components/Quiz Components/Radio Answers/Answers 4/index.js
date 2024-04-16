@@ -5,12 +5,12 @@ const options = [
   { label: 'Never', value: 'option1' },
   { label: 'Rarely', value: 'option2' },
   { label: 'Occasionally', value: 'option3' },
-  { label: 'Often', value: 'option4' }, // Added fourth option
+  { label: 'Often', value: 'option4' }
 ];
 
-const Answers4 = () => {
+const Answers4 = ({ onOptionChange }) => {  // Accepting onOptionChange as a prop
   const handleOptionSelect = (value) => {
-    // Handle selected option logic if needed
+    onOptionChange(value);  // Pass the selected value to the parent component's handler
   };
 
   return (

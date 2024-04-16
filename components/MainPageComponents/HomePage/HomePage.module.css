@@ -4,7 +4,7 @@
     align-items: flex-end;
     flex-direction: column;
     position:absolute;
-    right:0;
+    right: 625px;
     margin-top: 250px;
     margin-right: 40px;
 }
@@ -20,4 +20,5 @@
     color: var(--white);
     margin-top: 540px;
     margin-left: 40px;
+    left: 625px;
 }

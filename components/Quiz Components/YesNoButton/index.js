@@ -10,13 +10,13 @@ const YesNoButton = ({ onYes, onNo }) => {
   const handleYesClick = () => {
     setYesPressed(true);
     setNoPressed(false);
-    onYes();
+    onYes(3.2);
   };
 
   const handleNoClick = () => {
     setYesPressed(false);
     setNoPressed(true);
-    onNo();
+    onNo(0);
   };
 
   return (
