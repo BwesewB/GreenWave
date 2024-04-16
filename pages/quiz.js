@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from "@/styles/Quiz.module.css";
+import styles from "@/styles/Quiz.module.css"
 import ProgressBar from '@/components/Quiz Components/ProgTest';
 import Question1 from '@/components/Quiz Pages/Question 1';
 import Question2 from '@/components/Quiz Pages/Question 2';
@@ -65,7 +65,7 @@ export default function Home() {
     console.log("Calculated total score:", totalScore);  // Debugging: See calculated total
 };
 
-  return (
+return (
     <div className={styles.mainQuiz}>
       <style jsx global>{`
         body {
