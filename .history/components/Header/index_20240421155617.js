@@ -4,15 +4,14 @@ import { useRouter } from "next/router"
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function Header({
+export default function Header(
     // href,
     src="",
     width="",
     height="",
     handleBackOrHomeClick,
-    position = 'absolute'
 
-}){
+){
 
     const router = useRouter();
     const { name: routerName } = router.query;
@@ -30,7 +29,7 @@ export default function Header({
 
     return(
         <>
-            <header className={styles.headerSection} style={{ position }}>
+            <header className={styles.headerSection} style={{ position:'absolute' }}>
                 <div className={styles.Test}>
                     <Link href={""}><Image src={src} width={width} height={height} className={styles.headerSectionIconLeft} onClick={handleBackOrHomeClick}/></Link>
                     <div className={styles.headerSectionWords}>

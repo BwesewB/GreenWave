@@ -4,15 +4,14 @@ import { useRouter } from "next/router"
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function Header({
+export default function Header(
     // href,
     src="",
     width="",
     height="",
     handleBackOrHomeClick,
-    position = 'absolute'
 
-}){
+){
 
     const router = useRouter();
     const { name: routerName } = router.query;

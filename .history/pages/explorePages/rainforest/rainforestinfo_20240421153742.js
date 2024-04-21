@@ -4,7 +4,7 @@ import ExplorePageInfo from "@/components/MainPageComponents/ExplorePageInfo"
 export default function rainforestInfo(){
     return(
         <>
-            <ExplorePageInfo sectionTitle="RAINFOREST"/>
+            <ExplorePageInfo/>
         </>
     )
 }
