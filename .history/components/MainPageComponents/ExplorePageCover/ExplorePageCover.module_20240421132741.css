@@ -1,0 +1,18 @@
+.exploreCoverImageCenterer{
+    width:100%;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:-1
+}
+
+.exploreCoverImage{
+    border:1px solid red
+}
+
+.annoying{
+    width:430px;
+    height:932px;
+    background-color: var(--black);
+}
