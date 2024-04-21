@@ -10,17 +10,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-
+    width: 80%;
+    border: 2px solid red;
 }
 
 .stylesContainerExplorePage{
     width:430px;
-
+    border: 2px solid red;
 }
 
 .carouselArea{
-
+    border: 2px solid red;
     width:80%;
     height:200px;
     margin-top:10px;

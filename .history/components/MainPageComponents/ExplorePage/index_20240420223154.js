@@ -14,9 +14,9 @@ export default function ExplorePage(){
                     <div className={styles.carouselArea}>
                         <Carousel href="/ExplorePages/rainforest/rainforestCover" text="RAINFOREST" backgroundImage="/images/Group 42.png"/>
                         <Carousel href="" text="REEF" backgroundImage="/images/Group 43.png"/>
-                        <Carousel href="" text="ARCTIC" backgroundImage="/images/Group 44.png"/>
+                        {/* <Carousel href="" text="ARCTIC" backgroundImage="/images/Group 44.png"/>
                         <Carousel href="" text="TAIGA" backgroundImage="/images/Group 45.png"/>
-                        <Carousel href="" text="DESERT" backgroundImage="/images/Group 46.png"/>
+                        <Carousel href="" text="DESERT" backgroundImage="/images/Group 46.png"/> */}
                     </div>
                 </div>
             </div>

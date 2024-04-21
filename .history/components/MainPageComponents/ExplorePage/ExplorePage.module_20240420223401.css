@@ -30,6 +30,6 @@
     grid-template-columns: 140px 140px 140px 140px 140px;
     grid-gap: 25px;
     place-items: center;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }

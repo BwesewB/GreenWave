@@ -1,7 +1,7 @@
 .explorePagePhrase{
     font-family: var(--poppins);
     color: var(--white);
-    margin-top: 530px;
+    margin-top: 700px;
     margin-left: 40px;
 }
 
@@ -11,20 +11,18 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
+    border: 2px solid red;
 }
 
 .stylesContainerExplorePage{
-    width:430px;
-
+    width:432px;
 }
 
 .carouselArea{
-
+    border: 2px solid red;
     width:80%;
     height:200px;
-    margin-top:10px;
-    margin-left: 40px;
+    margin-top: 200px;
     left:40px;
     display:grid;
     grid-template-columns: 140px 140px 140px 140px 140px;
