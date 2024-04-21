@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+.explorePagePhrase{
+    position:absolute;
+    font-family: var(--poppins);
+    color: var(--white);
+    margin-top: 300px;
+    margin-left: 40px;
+}

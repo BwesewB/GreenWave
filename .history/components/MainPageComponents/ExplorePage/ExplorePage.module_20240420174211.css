@@ -1,0 +1,7 @@
+.landingPagePhrase{
+    position:absolute;
+    font-family: var(--poppins);
+    color: var(--white);
+    margin-top: 340px;
+    margin-left: 40px;
+}

@@ -1,0 +1,8 @@
+.areaAdjsuterActionPlanner{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px;
+    width: 100%;
+}

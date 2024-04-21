@@ -1,0 +1,40 @@
+.buttonWhole{
+    width:140px;
+    height:140px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.buttonText{
+    text-decoration: none;
+    margin:0;
+    font-size: var(--buttonText);
+    font-family: var(--raleway);
+    font-weight: 700;
+}
+
+.buttonStyling{
+    width:140px;
+    height:130px;
+    border:none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.clicked{
+    width:140px;
+    height:130px;
+    border:none;
+    border-radius: 10px;
+    transform: translateY(5px);
+    transition: 0.3s ease;
+}
+
+.buttonLower{
+    position:absolute;
+    width:140px;
+    height:130px;
+    border-radius: 20px;
+    margin-top: 0px;
+    background-color: red;
+}

@@ -1,0 +1,21 @@
+.explorePagePhrase{
+    position:absolute;
+    font-family: var(--poppins);
+    color: var(--white);
+    margin-top: 300px;
+    margin-left: 40px;
+}
+
+.carouselArea{
+    border: 2px solid red;
+    width:80%;
+    height:200px;
+    position:absolute;
+    margin-top: 400px;
+    left:40px;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 25px;
+    place-items: center;
+    overflow-x: scroll;
+}
