@@ -3,7 +3,8 @@
 export default function Graph(){
     return(
         <>
-            <div>placeholder</div>
+            {/* <div>placeholder</div> */}
+
         </>
     )
 }
