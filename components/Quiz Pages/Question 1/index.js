@@ -1,31 +1,50 @@
-import React from "react";
+import React from 'react';
 import Questions from "@/components/Questions";
-import { useState } from "react";
 import ButtonAndBack from "@/components/ButtonAndBack";
 import Answers1 from "@/components/Quiz Components/Radio Answers/Answers 1";
 
-export default function Question1({ handleQuizNext1Click }) {
+export default function Question1({ handleQuizNext1Click, handleUserAnswer }) {
+  // Function to handle option change from Answers1
+  const handleOptionChange = (value) => {
+    let score;
+    switch (value) {
+      case 'option1':
+        score = 3.5;
+        break;
+      case 'option2':
+        score = 3;
+        break;
+      case 'option3':
+        score = 2;
+        break;
+      case 'option4':
+        score = 1;
+        break;
+      default:
+        score = 0; // Handle unexpected values gracefully
+        break;
+    }
+    console.log("Selected answer:", value, "with score:", score);
+    handleUserAnswer(1, score); // Pass the question number and score back to the main quiz component
+  };
+  
 
+  // Assuming there might be a need to process something or log analytics
   const handleContinueClick = () => {
     console.log("Continue button clicked");
-    handleQuizNext1Click();
+    handleQuizNext1Click();  // Move to the next question
   };
 
   return (
     <div>
-      <Questions 
-        questionText="What is your primary mode of transportation for commuting?" 
-        
-      />
+      <Questions questionText="What is your primary mode of transportation for commuting?" />
+      <Answers1 onOptionChange={handleOptionChange} />
       <ButtonAndBack
-        linking=''
+        linking='' // Keep or adjust as necessary
         buttonText='CONTINUE'
-        onClickHandlerSecondaryMainButton={handleContinueClick}
-        tabbingButtonSecondary="3"
-
+        onClickHandlerSecondaryMainButton={handleContinueClick} // Handling the continue click here
+        tabbingButtonSecondary="3" // Restore if it was originally there for accessibility reasons
       />
-      <Answers1 />
     </div>
-
   );
 }

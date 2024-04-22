@@ -12,6 +12,8 @@
     z-index: 1;
     box-sizing: border-box;
     overflow: hidden;
+    top:320px;
+    left: 640px;
     width: 380px;
     color: var(--white);
 }

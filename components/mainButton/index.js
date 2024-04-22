@@ -8,7 +8,10 @@ export default function ButtonColoured({
     bgColor="var(--white)",
     primaryColor="var(--green)",
     tabbingButton="",
-    onClickHandler
+    onClickHandler,
+    customButtonStyle,
+
+    
 }){
     const [clicked, setClicked] = useState(false);
 
@@ -19,10 +22,13 @@ export default function ButtonColoured({
         }
     };
 
+    
+
     return(
         <>
             <div className={styles.buttonWhole}
                 tabIndex={tabbingButton}
+                style={customButtonStyle}
             >
                 <Link href={href}>
                     <button 

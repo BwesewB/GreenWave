@@ -5,12 +5,12 @@ const options = [
   { label: 'Yes', value: 'option1' },
   { label: 'Occasionally', value: 'option2' },
   { label: 'Rarely', value: 'option3' },
-  { label: 'Not at all', value: 'option4' }, // Added fourth option
+  { label: 'Not at all', value: 'option4' }
 ];
 
-const Answers5 = ({ customRadioStyle }) => {
+const Answers5 = ({ customRadioStyle, onOptionChange }) => {
   const handleOptionSelect = (value) => {
-    // Handle selected option logic if needed
+    onOptionChange(value); // Pass the selected value to the parent component's handler
   };
 
   return (
