@@ -11,15 +11,10 @@
     display:flex;
     align-items: flex-end;
     flex-direction: column;
-<<<<<<< HEAD
     position:absolute;
     right: 625px;
     margin-top: 250px;
     margin-right: 40px;
-=======
-    right:0;
-    margin-right: -80px;
->>>>>>> origin/Merge
 }
 
 .timeZone, .userTime{
@@ -40,12 +35,7 @@
     position:absolute;
     font-family: var(--poppins);
     color: var(--white);
-<<<<<<< HEAD
     margin-top: 540px;
     margin-left: 40px;
     left: 625px;
 }
-=======
-    margin-left: -160px;
-}
->>>>>>> origin/Merge
