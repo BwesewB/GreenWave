@@ -6,7 +6,7 @@ import ButtonAndBack from "@/components/ButtonAndBack";
 export default function Question2({ handleQuizNext2Click, handleUserAnswer }) {
   const handleSliderChange = (sliderValue) => {
     const kilometers = Math.round((sliderValue / 100) * 800);
-    const score = 3.5 - (3.5 * kilometers) / 800;
+    const score = (sliderValue / 100) * 3.2;
     console.log("Selected kilometers:", kilometers);
     console.log("Score for question 2:", score);
     
@@ -29,6 +29,7 @@ export default function Question2({ handleQuizNext2Click, handleUserAnswer }) {
         linking=''
         buttonText='CONTINUE'
         onClickHandlerSecondaryMainButton={handleContinueClick}
+        nextQuestionHandler={handleQuizNext2Click}
       />
     </div>
   );

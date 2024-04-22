@@ -1,7 +1,7 @@
 // YesNoButton.js
 
 import React, { useState } from 'react';
-import styles from './YesNoButton.module.css';
+import styles from "./YesNoButton.module.css";
 
 const YesNoButton = ({ onYes, onNo }) => {
   const [yesPressed, setYesPressed] = useState(false);
@@ -10,13 +10,13 @@ const YesNoButton = ({ onYes, onNo }) => {
   const handleYesClick = () => {
     setYesPressed(true);
     setNoPressed(false);
-    onYes(3.2);
+    onYes(0.5);
   };
 
   const handleNoClick = () => {
     setYesPressed(false);
     setNoPressed(true);
-    onNo(0);
+    onNo(3.2);
   };
 
   return (

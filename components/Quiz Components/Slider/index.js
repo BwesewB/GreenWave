@@ -26,6 +26,7 @@ const SliderComponent = ({ onChange }) => {
           className={styles.slider}
         />
       </div>
+      <div className={styles.sliderValue}>{kilometers}km</div>
     </div>
   );
 };

@@ -9,16 +9,16 @@ export default function Question1({ handleQuizNext1Click, handleUserAnswer }) {
     let score;
     switch (value) {
       case 'option1':
-        score = 3.5;
+        score = 0.5;
         break;
       case 'option2':
-        score = 3;
+        score = 0.5;
         break;
       case 'option3':
-        score = 2;
+        score = 2.3;
         break;
       case 'option4':
-        score = 1;
+        score = 3.2;
         break;
       default:
         score = 0; // Handle unexpected values gracefully

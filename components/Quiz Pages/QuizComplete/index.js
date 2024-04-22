@@ -14,11 +14,13 @@ export default function QuizComplete({ score }) {  // Accept score as a prop
                 <div className={styles.scoreContainer}>
                     <div className={styles.scoreElement}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none">
-                            <circle cx="70" cy="70" r="68" stroke="#F2F5EA" stroke-width="4"/>
+                            <circle cx="70" cy="70" r="68" stroke="#0BAA81" strokeWidth="4"/>
                         </svg>
-                        <h1 className={styles.scoreText}>{score.toFixed(1)}</h1> {/* Display score here */}
+                        <h1 className={styles.scoreText}>{score.toFixed(1)}</h1>
+                        <h4 className={styles.metric}>METRIC TONS OF CO2 PER YEAR</h4>
                     </div>
                 </div>
+                <h2 className={styles.category}>PLACEHOLDER</h2>
             </div>
         </>
     )

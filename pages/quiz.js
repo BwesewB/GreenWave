@@ -49,21 +49,25 @@ export default function Home() {
   };
 
   const calculateFinalScore = () => {
-    console.log("User answers before processing:", userAnswers);  // Debugging: See what's stored
+    console.log("User answers before processing:", userAnswers);
+  
     const totalScore = Object.values(userAnswers).reduce((acc, answer) => {
       console.log("Processing answer:", answer);
-        // Safely attempt to parse integer values from answers
-        const score = parseInt(answer, 10);
-        if (isNaN(score)) {  // Check if conversion failed
-            console.error("Failed to convert answer to score:", answer);  // Log problematic data
-            return acc;  // Skip this answer in the scoring
-        }
-        return acc + score;
+      const score = parseFloat(answer); // Parse as a floating-point number
+      if (isNaN(score)) {
+        console.error("Failed to convert answer to score:", answer);
+        return acc;
+      }
+      return acc + score;
     }, 0);
+  
     const clampedScore = Math.max(1.5, Math.min(totalScore, 16));
-    setFinalScore(clampedScore);
-    console.log("Calculated total score:", totalScore);  // Debugging: See calculated total
-};
+    const floatScore = parseFloat(clampedScore.toFixed(1));
+    setFinalScore(floatScore);
+  
+    console.log("Calculated total score:", totalScore);
+  };
+  
 
 return (
     <div className={styles.mainQuiz}>

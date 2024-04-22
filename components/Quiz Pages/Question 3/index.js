@@ -1,6 +1,7 @@
 import React from "react";
 import Questions from "@/components/Questions";
 import ButtonAndBack from "@/components/ButtonAndBack";
+import YesNoButton from "@/components/Quiz Components/YesNoButton";
 
 export default function Question3({ handleQuizNext3Click, handleUserAnswer }) {
   const handleYes = (score) => {
@@ -21,6 +22,7 @@ export default function Question3({ handleQuizNext3Click, handleUserAnswer }) {
   return (
     <div>
       <Questions questionText="Do you compost organic waste?" />
+      <YesNoButton onYes={handleYes} onNo={handleNo} />
       <ButtonAndBack
         linking='' // Keeping the linking property as per your original component
         buttonText='CONTINUE'
