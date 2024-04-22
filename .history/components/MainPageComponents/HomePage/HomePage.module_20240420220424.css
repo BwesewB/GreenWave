@@ -1,0 +1,38 @@
+.headerCenterer{
+    width:100%;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.coolAPIAreaAdjust{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px;
+    margin-right: 80px;
+    width: 100%;
+    background-color: red;
+}
+
+.coolAPIArea{
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+    right:0;
+
+
+}
+
+.timeZone, .userTime{
+    font-family: var(--poppins);
+    color: var(--white);
+}
+
+.homePagePhrase{
+    position:absolute;
+    font-family: var(--poppins);
+    color: var(--white);
+    margin-top: 540px;
+    margin-left: 40px;
+}

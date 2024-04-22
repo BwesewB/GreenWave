@@ -1,0 +1,26 @@
+.headerCenterer{
+    width:100%
+}
+
+.coolAPIArea{
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position:absolute;
+    right:0;
+    margin-top: 250px;
+    margin-right: 40px;
+}
+
+.timeZone, .userTime{
+    font-family: var(--poppins);
+    color: var(--white);
+}
+
+.homePagePhrase{
+    position:absolute;
+    font-family: var(--poppins);
+    color: var(--white);
+    margin-top: 540px;
+    margin-left: 40px;
+}

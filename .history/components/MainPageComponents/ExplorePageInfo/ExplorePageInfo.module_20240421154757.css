@@ -1,0 +1,23 @@
+
+.entirePageInfo{
+    width:100%;
+    position:absolute;
+    display: flex;
+
+    height:3300px;
+
+}
+
+.entirePageInfoCenterer{
+    width:420px;
+    background-color: var(--black);
+    border: 2px solid red
+}
+
+.sectionTitleCenterer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

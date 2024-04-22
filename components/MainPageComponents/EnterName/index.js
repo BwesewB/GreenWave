@@ -1,6 +1,7 @@
 import ButtonColoured from "../../mainButton"
 import styles from "@/components/MainPageComponents/EnterName/EnterName.module.css"
 import { useState } from "react";
+import { useEffect } from "react";
 
 export default function EnterName({ handleContinueClick }){
 
@@ -10,6 +11,10 @@ export default function EnterName({ handleContinueClick }){
     const firstNameValid = nameRegex.test(firstName);
 
     const labelStyle = firstName ? { borderColor: firstNameValid ? 'var(--green)' : '#F4557E' } : {};
+
+    useEffect(() => {
+        localStorage.setItem('name', firstName);
+    }, [firstName]);
 
     return(
         <>

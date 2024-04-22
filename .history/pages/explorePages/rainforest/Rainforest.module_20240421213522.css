@@ -1,0 +1,11 @@
+.rainforestInfoGraph{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    z-index: 2;
+}
+
+.rainforestInfoGraphCenterer{
+    width:430px;
+}

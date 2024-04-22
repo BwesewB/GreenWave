@@ -1,0 +1,14 @@
+
+.entirePageInfo{
+    width:100%;
+    height:3300px;
+    background-color: var(--black);
+}
+
+.sectionTitleCenterer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

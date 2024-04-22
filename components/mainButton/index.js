@@ -47,7 +47,6 @@ export default function ButtonColoured({
                     <div className={styles.buttonLower} style={{ backgroundColor: primaryColor}}/>
                 </Link>
             </div>
-
         </>
     )
 }

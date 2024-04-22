@@ -1,0 +1,14 @@
+.exploreCoverImageCenterer{
+    width:100%;
+    position:absolute;
+    background-color: rebeccapurple;
+}
+
+.exploreCoverImage{
+    border:1px solid red
+}
+
+.annoying{
+    width:430px;
+    height: 932px;
+}
