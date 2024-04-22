@@ -9,4 +9,5 @@
 - Considers sustainability and affordability while keeping the overall layout simple.
 
 ## Packages installed
-- Installing three.js, using spline for our WOW factor
+- Installing three.js for our WOW factor
+- installed chart
